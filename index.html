@@ -20,10 +20,10 @@
           <div class="card-body">
             <div class="form-group">
               <div class="radio" id="question1">
-                <input type="radio" value="1">I only shop online</input>
-                <input type="radio" value="3">Gucci</input>
-                <input type="radio" value="5">Hot Topic</input>
-                <input type="radio" value="7">Nike</input>
+                <input type="radio" class="question1" value="1">I only shop online</input>
+                <input type="radio" class="question1" value="3">Gucci</input>
+                <input type="radio" class="question1" value="5">Hot Topic</input>
+                <input type="radio" class="question1" value="7">Nike</input>
               </div>
             </div>
           </div>
@@ -36,10 +36,10 @@
           <div class="card-body">
             <div class="form-group">
               <div class="radio" id="question2">
-                <input type="radio" value="1">Pizza</input>
-                <input type="radio" value="3">Lobster</input>
-                <input type="radio" value="5">Steak</input>
-                <input type="radio" value="7">Salad</input>
+                <input type="radio" class="question2" value="1">Pizza</input>
+                <input type="radio" class="question2" value="3">Lobster</input>
+                <input type="radio" class="question2" value="5">Steak</input>
+                <input type="radio" class="question2" value="7">Salad</input>
               </div>
             </div>
           </div>
@@ -52,10 +52,10 @@
           <div class="card-body">
             <div class="form-group">
               <div class="radio" id="question3">
-                <input type="radio" value="5">Las Vegas</input>
-                <input type="radio" value="1">A poolside cabana</input>
-                <input type="radio" value="3">New York City</input>
-                <input type="radio" value="7">Italy</input>
+                <input type="radio" class="question3" value="5">Las Vegas</input>
+                <input type="radio" class="question3" value="1">A poolside cabana</input>
+                <input type="radio" class="question3" value="3">New York City</input>
+                <input type="radio" class="question3" value="7">Italy</input>
               </div>
             </div>
           </div>
@@ -68,10 +68,10 @@
           <div class="card-body">
             <div class="form-group">
               <div class="radio" id="question4">
-                <input type="radio" value="3">Beyonce</input>
-                <input type="radio" value="1">Willie Nelson</input>
-                <input type="radio" value="5">Billie Eilish</input>
-                <input type="radio" value="7">Post Malone</input>
+                <input type="radio" class="question4" value="3">Beyonce</input>
+                <input type="radio" class="question4" value="1">Willie Nelson</input>
+                <input type="radio" class="question4" value="5">Billie Eilish</input>
+                <input type="radio" class="question4" value="7">Post Malone</input>
               </div>
             </div>
           </div>
@@ -84,10 +84,10 @@
           <div class="card-body">
             <div class="form-group">
               <div class="radio" id="question5">
-                <input type="radio" value="7">Protein shake</input>
-                <input type="radio" value="1">Water</input>
-                <input type="radio" value="5">Black coffee</input>
-                <input type="radio" value="3">Cold-pressed juice</input>
+                <input type="radio" class="question5" value="7">Protein shake</input>
+                <input type="radio" class="question5" value="1">Water</input>
+                <input type="radio" class="question5" value="5">Black coffee</input>
+                <input type="radio" class="question5" value="3">Cold-pressed juice</input>
               </div>
             </div>
           </div>
@@ -99,10 +99,10 @@
           </div>
           <div class="card-body">
             <div class="form-group" id="question6">
-              <input type="radio" value="1">Lunch</input>
-              <input type="radio" value="3">Drama</input>
-              <input type="radio" value="5">Woodshop</input>
-              <input type="radio" value="7">Gym</input>
+              <input type="radio" class="question6" value="1">Lunch</input>
+              <input type="radio" class="question6" value="3">Drama</input>
+              <input type="radio" class="question6" value="5">Woodshop</input>
+              <input type="radio" class="question6" value="7">Gym</input>
             </div>
           </div>
         </div>
@@ -113,19 +113,33 @@
           </div>
           <div class="card-body">
             <div class="form-group" id="question7">
-              <input type="radio" value="5">Beedrill</input>
-              <input type="radio" value="3">Vulpix</input>
-              <input type="radio" value="1">Snorlax</input>
-              <input type="radio" value="7">Charizard</input>
+              <input type="radio" class="question7" value="5">Beedrill</input>
+              <input type="radio" class="question7" value="3">Vulpix</input>
+              <input type="radio" class="question7" value="1">Snorlax</input>
+              <input type="radio" class="question7" value="7">Charizard</input>
             </div>
           </div>
         </div>
       </form>
-      <button class="btn btn-lg btn-block btn-light" id="submit" onclick="checkAnswers()">Show me the results!</button>
+      <button class="btn btn-lg btn-block btn-light" id="submit">Show me the results!</button>
       <div class="results">
         <div class="card">
           <div class="card-title">
             <p>You are a <span id="quiz-result"></span> villager type!</p>
+          </div>
+          <div class="info">
+            <div id="jock">
+              <h1>jock</h1>
+            </div>
+            <div id="snooty">
+              <h1>snooty</h1>
+            </div>
+            <div id="cranky">
+              <h1>cranky</h1>
+            </div>
+            <div id="lazy">
+              <h1>lazy</h1>
+            </div>
           </div>
         </div>
       </div>

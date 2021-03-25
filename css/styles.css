@@ -1,0 +1,13 @@
+.results {
+  display: none;
+}
+
+body {
+  background-image: url(/img/1236351.jpg);
+  background-size: cover;
+  font-family: monospace;
+}
+
+#jock, #snooty, #lazy, #cranky {
+  display: none;
+}
