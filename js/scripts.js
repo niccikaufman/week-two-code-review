@@ -19,21 +19,29 @@ $(document).ready(function() {
       $(".results").show();
       $("#quiz-result").text("lazy");
       $("#lazy").show();
+      $("#submit").toggle();
+
     }
-    else if (questionOutput <= 21 && questionOutput > 7){
+    else if (questionOutput <= 21 && questionOutput > 8){
       $(".results").show();
       $("#quiz-result").text("snooty");
       $("#snooty").show();
+      $("#submit").toggle();
+
     }
-    else if (questionOutput <= 35 && questionOutput > 21){
+    else if (questionOutput <= 35 && questionOutput > 22){
       $(".results").show();
       $("#quiz-result").text("cranky");
       $("#cranky").show();
+      $("#submit").toggle();
+
     }
-    else if (questionOutput <= 49 && questionOutput > 35){
+    else if (questionOutput <= 49 && questionOutput > 36){
       $(".results").show();
       $("#quiz-result").text("jock");
       $("#jock").show();
+      $("#submit").toggle();
+
     }
     event.preventDefault();
   });
