@@ -1,6 +1,7 @@
 function addInput(input1, input2, input3, input4, input5, input6, input7) {
   return input1 + input2 + input3 + input4 + input5 + input6 + input7;
 }
+let logEntries = [];
 
 $(document).ready(function() {
   $("#submit").click(function(){
@@ -13,7 +14,8 @@ $(document).ready(function() {
     const q7 = +($("input:radio.question7:checked").val());
     
     let total = addInput(q1, q2, q3, q4, q5, q6, q7);
-    console.log(total);
+    logEntries.push(total);
+    console.log(logEntries);
 
     if (total <= 7){
       $(".results").show();
