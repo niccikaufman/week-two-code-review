@@ -1,18 +1,19 @@
-var addInput = function(input1, input2, input3, input4, input5, input6, input7) {
+function addInput(input1, input2, input3, input4, input5, input6, input7) {
   return input1 + input2 + input3 + input4 + input5 + input6 + input7;
 }
 
 $(document).ready(function() {
   $("#submit").click(function(){
-    var q1 = parseInt($("input:radio.question1:checked").val());
-    var q2 = parseInt($("input:radio.question2:checked").val());
-    var q3 = parseInt($("input:radio.question3:checked").val());
-    var q4 = parseInt($("input:radio.question4:checked").val());
-    var q5 = parseInt($("input:radio.question5:checked").val());
-    var q6 = parseInt($("input:radio.question6:checked").val());
-    var q7 = parseInt($("input:radio.question7:checked").val());
+    const q1 = +($("input:radio.question1:checked").val());
+    const q2 = +($("input:radio.question2:checked").val());
+    const q3 = +($("input:radio.question3:checked").val());
+    const q4 = +($("input:radio.question4:checked").val());
+    const q5 = +($("input:radio.question5:checked").val());
+    const q6 = +($("input:radio.question6:checked").val());
+    const q7 = +($("input:radio.question7:checked").val());
     
-    var total = addInput(q1, q2, q3, q4, q5, q6, q7);
+    let total = addInput(q1, q2, q3, q4, q5, q6, q7);
+    console.log(total);
 
     if (total <= 7){
       $(".results").show();
