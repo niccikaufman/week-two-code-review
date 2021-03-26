@@ -14,7 +14,7 @@ $(document).ready(function() {
     const q7 = +($("input:radio.question7:checked").val());
     
     let total = addInput(q1, q2, q3, q4, q5, q6, q7);
-    logEntries.push(total);
+    logEntries.push(total, q1, q2, q3, q4, q5, q6, a7);
     console.log(logEntries);
 
     if (total <= 7){
